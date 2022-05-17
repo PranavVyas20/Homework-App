@@ -1,10 +1,14 @@
 # Flutter-HomerworkApp
 
-How to build on android device:
+How to build/install on android device:
 
 - Clone this repo or simply download the code zip file.
 
-- Open the downloaded/cloned folder in Vs code or Android Studio.
+- Open the downloaded/cloned folder in Visual Studio Code or Android Studio.
+![Screenshot from 2022-05-17 18-31-19](https://user-images.githubusercontent.com/90063033/168817002-4bab4b3c-3553-40f2-bcbe-44192ebc72a3.png)
+
+![Screenshot from 2022-05-17 18-31-45](https://user-images.githubusercontent.com/90063033/168817019-8732ecab-9861-471d-9b2f-a30a3ed2e9b4.png)
+
 
 - To run the app in a physical android device connect your device to your machine with a usb cable and make sure usb debugging is turned on. How to turn on usb debugging - https://www.howtogeek.com/129728/how-to-access-the-developer-options-menu-and-enable-usb-debugging-on-android-4.2/
 
