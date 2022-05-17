@@ -1,6 +1,6 @@
 # Flutter-HomerworkApp
 
-How to build :
+How to build on android device:
 
 - Clone this repo or simply download the code zip file.
 
