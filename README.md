@@ -17,5 +17,5 @@ How to turn on usb debugging - https://www.howtogeek.com/129728/how-to-access-th
 - To install apk on the device, type in the terminal 'flutter install'.
 ![Screenshot from 2022-05-17 18-27-28](https://user-images.githubusercontent.com/90063033/168816385-26eb9625-04ed-4f91-adf0-f0e2e1485239.png)
 
-- Build apk type in the terminal 'flutter build apk'.
+- To build apk, type in the terminal 'flutter build apk'.
 ![Screenshot from 2022-05-17 18-28-28](https://user-images.githubusercontent.com/90063033/168816401-dcd95602-50c5-43b7-89d1-081d0029441e.png)
