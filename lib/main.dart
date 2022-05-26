@@ -47,45 +47,50 @@ class _GHFlutterAppState extends State<GHFlutterApp> {
           ),
           body: SafeArea(
             child: Container(
-              margin: const EdgeInsets.only(left: 12,top: 12,bottom: 12,right: 0),
+              // removed top padding from here too
+              margin: const EdgeInsets.only(left: 0,top: 0.0,bottom: 12,right: 0),
               child: SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                     Container(
-                       margin: const EdgeInsets.only(top: 10.0),
-                       child: Text(
-                        "Teacher Profile",
-                        style: GoogleFonts.epilogue(
-                            color: const Color(0xff270F36),
-                            fontWeight: FontWeight.w800,
-                          fontSize: 15
-                        ),
-                    ),
-                     ),
-                    Container(
-                      margin: const EdgeInsets.only(top: 10),
-                      child: Text(
-                        "Which grades &\nsubjects you teach",
-                        style: GoogleFonts.epilogue(
-                            color: const Color(0xff270F36),
-                            fontWeight: FontWeight.w700,
-                            fontSize: 30
+                // removed padding from here
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 40.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                       Container(
+                         margin: const EdgeInsets.only(top: 10.0,left: 10.0),
+                         child: Text(
+                          "Teacher Profile",
+                          style: GoogleFonts.epilogue(
+                              color: const Color(0xff270F36),
+                              fontWeight: FontWeight.w800,
+                            fontSize: 15
+                          ),
+                      ),
+                       ),
+                      Container(
+                        margin: const EdgeInsets.only(top: 10,left: 10.0),
+                        child: Text(
+                          "Which grades &\nsubjects you teach",
+                          style: GoogleFonts.epilogue(
+                              color: const Color(0xff270F36),
+                              fontWeight: FontWeight.w700,
+                              fontSize: 30
+                          ),
                         ),
                       ),
-                    ),
-                    ListView.builder(
-                        shrinkWrap: true,
-                        physics: const NeverScrollableScrollPhysics(),
-                        itemCount: Another.newData.length,
-                        itemBuilder: (BuildContext context, int index) {
-                          return customCard(
-                            dataList: Another.newData[index]['subjects'] as List<Map<String,String>>,
-                            standard: Another.newData[index]['standard'].toString(),
-                            //subImgUrl: Another.,
-                          );
-                        })
-                  ],
+                      ListView.builder(
+                          shrinkWrap: true,
+                          physics: const NeverScrollableScrollPhysics(),
+                          itemCount: Another.newData.length,
+                          itemBuilder: (BuildContext context, int index) {
+                            return customCard(
+                              dataList: Another.newData[index]['subjects'] as List<Map<String,String>>,
+                              standard: Another.newData[index]['standard'].toString(),
+                              //subImgUrl: Another.,
+                            );
+                          })
+                    ],
+                  ),
                 ),
               ),
             ),
